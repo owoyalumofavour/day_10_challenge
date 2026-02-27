@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 
-day_10app = FastAPI(title="My RESTful API", description="Day 10 Challenge", version="1.0.0")
+day_10app = FastAPI(title="My RESTful API", description="Day 10 Challenge", version="Latest One")
 
 @day_10app.get("/")
 async def root():
@@ -28,4 +28,5 @@ async def status():
     return {
         "status": "Up and Ready!",
         "timestamp": "datetime.utcnow()" # You can use datetime.utcnow() for dynamic
+
     }
